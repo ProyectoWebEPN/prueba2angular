@@ -14,7 +14,7 @@ export class DetalleProductoComponent implements OnInit {
   public producto: ProductoInterface = {
     tipo: "",
     marca: "",
-    precio: "",
+    precio: 0,
     color: ""
   };
   public cantidada = 1

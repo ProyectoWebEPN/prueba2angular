@@ -1,7 +1,7 @@
 export interface ProductoInterface{
   tipo?: string;
   marca?: string;
-  precio?: string;
+  precio?: number;
   color?: string;
   id?: string;
 }

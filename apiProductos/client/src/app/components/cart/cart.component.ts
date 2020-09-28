@@ -12,6 +12,7 @@ export class CartComponent implements OnInit {
   ramm = []
   index = 0
   productos: any;
+  total = 0
 
   constructor() { }
 
@@ -22,7 +23,11 @@ export class CartComponent implements OnInit {
 
   getListProductos(): void{
     this.ramm = CartComponent.listaProductos
-  
+    this.ramm.forEach(
+      (it)=>{
+        this.total = this.total + (it.precio*it.cantidad)
+      }
+    )
   }
 
   onClickDelete(nombre){
