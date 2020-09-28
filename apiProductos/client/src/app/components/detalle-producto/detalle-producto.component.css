@@ -1,3 +1,70 @@
 p.card-text{
   text-align: justify;
 }
+input{
+  width: 18%;
+}
+div {
+  display: block;
+}
+.skin-light .number-input button {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+.skin-light .number-input.number-input input[type=number] {
+  max-width: 7rem;
+  padding: .5rem;
+  border: 1px solid #ced4da;
+  border-width: 0 1px;
+  font-size: 1rem;
+  height: 2rem;
+  color: #495057;
+}
+.skin-light .number-input.number-input button {
+    width: 2.5rem;
+    height: .7rem;
+}
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.skin-light .number-input.number-input button:before, .skin-light .number-input.number-input button:after {
+    width: 1rem;
+    background-color: #495057;
+}
+.skin-light .number-input button.plus:after {
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+.skin-light .number-input button:before, .skin-light .number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    height: 2px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.skin-light .number-input input[type=number] {
+  text-align: center;
+}
+
+.mb-0, .my-0 {
+  margin-bottom: 0!important;
+}

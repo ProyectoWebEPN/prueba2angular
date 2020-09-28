@@ -1,23 +1,34 @@
-#productos{
-  border-radius: 0.25rem;
-  background: #f9f9f9 !import;
+.container{
+  margin: 0px auto;
+  margin-bottom: 20px;
+  font-size: 23px;
 }
-section{
-  padding: 20px 0;
-}
-
-#productos .card{
-  border:none;
-  background: #fff;
-}
-.card_producto{
-  position: relative;
-  -webkit-transform: rotateY(0deg);
-  z-index: 2;
+.pastel{
+  list-style: none;
+  display: block;
+  float: left;
+  width: 28%;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 30px;
 }
-
-.card-title{
-  color: #007bff;
-  cursosr:pointer;
+.image{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
 }
+.pastel img{
+  width: 100%;
+}
+ .pastel a{
+  text-decoration: none;
+  color: black;
+}
+.confirm{
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+

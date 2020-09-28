@@ -20,6 +20,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { FormsModule} from "@angular/forms";
 import { ModalComponent } from './components/modal/modal.component';
+import { CartComponent } from './components/cart/cart.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { ModalComponent } from './components/modal/modal.component';
     Page404Component,
     ContactoComponent,
     HeroComponent,
-    ModalComponent
+    ModalComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,33 @@
+<h2>Carro de Compras</h2>
+<div class="row">
+    <div class="col">
+      <table class="table table-hover">
+        <tbody>
+            <tr class="" *ngFor="let producto of ramm; index as i;"  [attr.id]="producto.tipo">
+              <div class="row colo">
+                <div class="col ">
+                  <img class="image" src={{producto.color}} alt="">
+                </div>
+                <div class="col">
+                  <p><b>Nombre: </b>{{producto.tipo}}</p>
+                <p><b>Descripción: </b>{{producto.marca}}</p>
+                <p><b>Precio: </b>{{producto.precio}}<b> USD</b></p>
+                <p><b>Cantidad seleccionada: </b>{{producto.cantidad}}</p>
+                 
+                  <button class="btn btn-primary"
+                   (click) = "onClickDelete(producto.tipo)" >Eliminar</button>
+                </div>
+              </div>
+                
+               
+              </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-lg-3">
+      <p>Total: {{total}} USD</p>
+      <button>Comprar</button>
+    </div>
+  </div>
+  <app-modal></app-modal>
+  

@@ -1,13 +1,9 @@
 {
   "db": {
-    "host": "cluster0.tdjar.mongodb.net/api_productos",
-    "port": 47052,
-    "url": "mongodb+srv://newUser:api_productos1@cluster0.tdjar.mongodb.net/api_productos?retryWrites=true&w=majority",
+    "host": "localhost",
+    "port": 32768,
     "database": "api_productos",
-    "password": "api_productos1",
     "name": "db",
-    "user": "newUser",
-    "useNewUrlParser": true,
     "connector": "mongodb"
   }
 }
