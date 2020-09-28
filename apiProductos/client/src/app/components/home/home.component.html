@@ -1,27 +1,17 @@
 <section id="productos">
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let producto of productos">
-        <div class="card_producto">
-          <div class="card">
-            <div class="card-body text-center">
-              <p>
-                <img class= "img-fluid" src="{{producto.color}}" alt="{{producto.color}}">
-              </p>
-              <h4 routerLink="/producto/{{producto.id}}" class="card-title">{{producto.tipo}}</h4>
-              <p class="card-text">
-                {{producto.marca}}
-              </p>
-              <p>
-                Precio unitario: {{producto.precio}} USD
-              </p>
-              <button type="button">
-                <span routerLink= "/producto/{{producto.id}}">Añadir al carrito</span>
-              </button>
-            </div>
-          </div>
+    <ul>
+      <li *ngFor="let producto of productos" class="pastel">
+        <div class="image">
+          <img src="{{producto.color}}"/>
         </div>
-      </div>
-    </div>
+        <h3 routerLink="/producto/{{producto.id}}" class="card-title">{{producto.tipo}}</h3>
+        <p>{{producto.marca}}</p>
+        <p>Precio: {{producto.precio}} USD</p>
+        <button type="button">
+          <span routerLink= "/producto/{{producto.id}}">Añadir al carrito</span>
+        </button>
+      </li>
+    </ul>
   </div>
 </section>

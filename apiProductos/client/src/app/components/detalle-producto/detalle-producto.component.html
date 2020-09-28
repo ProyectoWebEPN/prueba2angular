@@ -1,4 +1,4 @@
-<section id="productos">
+<section id="productos" class="skin-light">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-4 mx-auto" >
@@ -15,7 +15,17 @@
               <p class="card-text">
                 Precio unitario: {{producto.precio}} USD
               </p>
-              <p>Cantidad: <input type="number" id="cantidad" (keyup)="onKey($event)" (oninput)="onClick($event)"></p>
+              <div class="def-number-input number-input safari_only mb-0 w-100">
+                <div class="def-number-input number-input safari_only mb-0 w-100">
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                  class="minus decrease" (click)=onClickMinus()></button>
+                <input class="quantity" min="0" name="quantity" value="1" type="number">
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                  class="plus increase" (click)=onClickPlus()></button>
+              </div>
+              </div>
+              
+              <p>Cantidad: <input type="number" id="cantidad" (keyup)="onKey($event)" ></p>
               <button type="button" (click)="saveProductoToCart()">
                 <span>Añadir al carrito</span>
               </button>

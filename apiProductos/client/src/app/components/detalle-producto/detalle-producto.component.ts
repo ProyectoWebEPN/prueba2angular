@@ -17,7 +17,7 @@ export class DetalleProductoComponent implements OnInit {
     precio: "",
     color: ""
   };
-  public cantidada = 0
+  public cantidada = 1
 
   ngOnInit(): void {
     const producto_id = this.route.snapshot.params["id"];
@@ -30,7 +30,10 @@ export class DetalleProductoComponent implements OnInit {
 
   }
 
-  onClick(event){this.cantidada = event.target.value;}
+  onClickPlus(){this.cantidada++;}
+  onClickMinus(){if (this.cantidada > 0) {
+    this.cantidada--
+  }}
   onKey(event) {this.cantidada = event.target.value;}
 
   saveProductoToCart(){

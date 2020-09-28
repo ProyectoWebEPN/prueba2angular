@@ -4,9 +4,9 @@
       <table class="table table-hover">
         <tbody>
             <tr class="" *ngFor="let producto of ramm; index as i;"  [attr.id]="producto.tipo">
-              <div class="row">
-                <div class="col colo">
-                  <img class="img-fluid" src={{producto.color}} alt="">
+              <div class="row colo">
+                <div class="col ">
+                  <img class="image" src={{producto.color}} alt="">
                 </div>
                 <div class="col">
                   <p><b>Nombre: </b>{{producto.tipo}}</p>
