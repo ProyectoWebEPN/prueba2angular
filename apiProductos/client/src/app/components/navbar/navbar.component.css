@@ -1,0 +1,16 @@
+#aaa{
+  background-image: url("../../../assets/carro.png");
+  background-size: contain, cover;
+  bottom:0px;
+	height: 30px;
+	right:0px;
+	width:30px;
+}
+#logo{
+    background-image: url("../../../assets/logo2.png");
+    background-size: contain, cover;
+    bottom:0px;
+  	height: 30px;
+  	right:0px;
+  	width:30px;
+}
